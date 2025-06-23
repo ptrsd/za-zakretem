@@ -101,8 +101,8 @@ function initMap() {
     if (!mapContainer) return;
     
     // Coordinates for Pracze 19, gmina Milicz
-    const lat = 51.476389;
-    const lng = 17.207778;
+    const lat = 51.47299952573043;
+    const lng = 17.20874181013758;
     
     // Initialize map
     const map = L.map('map').setView([lat, lng], 15);
