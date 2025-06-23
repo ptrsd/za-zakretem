@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole namiotowe Za zakrętem - Wiejska baza wypoczynku w Praczach</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Pole namiotowe Za zakrętem</h1>
+            <p class="hero-subtitle">Spokojne miejsce w sercu wsi, idealna baza wypadowa do Stawów Milickich</p>
+            <a href="#camping" class="btn btn--primary btn--lg">Poznaj nasze oferty</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#camping">Pole namiotowe</a></li>
+                <li><a href="#caravans">Przyczepy</a></li>
+                <li><a href="#bikes">Rowery</a></li>
+                <li><a href="#location">Lokalizacja</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Camping Section -->
+        <section id="camping" class="section">
+            <div class="container">
+                <h2>Pole namiotowe</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>15 miejsc na namioty</h3>
+                        <p class="price">50 zł za dobę</p>
+                        <h4>Udogodnienia:</h4>
+                        <ul class="amenities-list">
+                            <li>Prysznic</li>
+                            <li>Toaleta</li>
+                            <li>Prąd</li>
+                            <li>Miejsce na ognisko</li>
+                            <li>Dostęp do podstawowych narzędzi potrzebnych do naprawy roweru</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel" id="campingCarousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750583922/gpt4o_images/ixqheysphymk5wrfrz6c.png" alt="Pole namiotowe w środku wsi" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750584158/gpt4o_images/t72lp2rog7esfmquduis.png" alt="Udogodnienia pola namiotowego" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750584209/gpt4o_images/itm74ykho3ifi5x5zc2y.png" alt="Stawy Milickie" class="carousel-image">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-btn--prev" data-carousel="campingCarousel">‹</button>
+                            <button class="carousel-btn carousel-btn--next" data-carousel="campingCarousel">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caravans Section -->
+        <section id="caravans" class="section section--alt">
+            <div class="container">
+                <h2>Przyczepy kempingowe</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>2 przyczepy dwuosobowe</h3>
+                        <p class="price">70 zł za dobę</p>
+                        <h4>Wyposażenie:</h4>
+                        <ul class="amenities-list">
+                            <li>Prysznic</li>
+                            <li>Toaleta</li>
+                            <li>Kuchnia</li>
+                            <li>Stół jadalny</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel" id="caravansCarousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750583988/gpt4o_images/chn8btzoxzoifbsfq8nf.png" alt="Przyczepy kempingowe" class="carousel-image">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750584117/gpt4o_images/kpvjj0micpmpz7ewr9du.png" alt="Wnętrze przyczepy" class="carousel-image">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-btn--prev" data-carousel="caravansCarousel">‹</button>
+                            <button class="carousel-btn carousel-btn--next" data-carousel="caravansCarousel">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bikes Section -->
+        <section id="bikes" class="section">
+            <div class="container">
+                <h2>Wypożyczalnia rowerów</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>3 rodzaje rowerów</h3>
+                        <p class="price">50 zł za dobę</p>
+                        <h4>Dostępne:</h4>
+                        <ul class="amenities-list">
+                            <li>Rower MTB</li>
+                            <li>Rower miejski</li>
+                            <li>Rower dziecięcy</li>
+                            <li>Kaski w różnych rozmiarach</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="carousel" id="bikesCarousel">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750584045/gpt4o_images/jrwyvzoyelettjqwa1ob.png" alt="Rowery do wynajęcia" class="carousel-image">
+                                </div>
+                            </div>
+                            <button class="carousel-btn carousel-btn--prev" data-carousel="bikesCarousel">‹</button>
+                            <button class="carousel-btn carousel-btn--next" data-carousel="bikesCarousel">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="section section--alt">
+            <div class="container">
+                <h2>Lokalizacja</h2>
+                <div class="location-content">
+                    <div id="map" class="map-container"></div>
+                    <div class="location-info">
+                        <h3>Adres</h3>
+                        <p>Pracze 19<br>gmina Milicz<br>woj. dolnośląskie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Informacje kontaktowe</h3>
+                        <div class="contact-item">
+                            <strong>Adres:</strong>
+                            <p>Pracze 19, gmina Milicz, woj. dolnośląskie</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Telefon:</strong>
+                            <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <p><a href="mailto:kontakt@zakretem.pl">kontakt@zakretem.pl</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Google Maps:</strong>
+                            <p><a href="https://maps.google.com/?q=17.207778,51.476389" target="_blank">Zobacz na mapie Google</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
