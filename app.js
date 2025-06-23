@@ -148,7 +148,7 @@ function initMap() {
         <div style="text-align: center; padding: 10px;">
             <strong>Pole namiotowe Za zakrętem</strong><br>
             Pracze 19, gmina Milicz<br>
-            <a href="https://maps.google.com/?q=${lng},${lat}" target="_blank" style="color: #2d5940; text-decoration: none;">
+            <a href="https://maps.google.com/?q=${lat},${lng}" target="_blank" style="color: #2d5940; text-decoration: none;">
                 🗺️ Zobacz w Google Maps
             </a>
         </div>
