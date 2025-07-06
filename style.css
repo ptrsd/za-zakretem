@@ -657,7 +657,7 @@ select.form-control {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://pplx-res.cloudinary.com/image/upload/v1750583922/gpt4o_images/ixqheysphymk5wrfrz6c.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
