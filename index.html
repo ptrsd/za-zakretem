@@ -19,9 +19,9 @@
     <meta property="og:description"
           content="Odkryj pole namiotowe i wypożyczalnię rowerów Za zakrętem w Praczach. Idealne miejsce na relaks w otoczeniu przyrody.">
     <meta property="og:image" content="https://za-zakretem.pl/og-za-zakretem.png">
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
     <meta property="og:url" content="https://www.za-zakretem.pl/">
     <meta property="og:type" content="website">
 </head>
@@ -199,7 +199,8 @@
                     <div class="contact-item">
                         <strong>Email:</strong>
                         <p><a href="mailto:januszstasiewicz@hotmail.com"
-                              aria-label="Wyślij wiadomość e-mail na adres januszstasiewicz@hotmail.com">januszstasiewicz@hotmail.com</a></p>
+                              aria-label="Wyślij wiadomość e-mail na adres januszstasiewicz@hotmail.com">januszstasiewicz@hotmail.com</a>
+                        </p>
                     </div>
                     <div class="contact-item">
                         <strong>Google Maps:</strong>
@@ -224,6 +225,52 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="app.js"></script>
-<img style="display:none" src="//www.clustrmaps.com/map_v2.png?d=8HQzvhgelv3eBzXkAGmLvmGRDi-63JYDncT-XMY74J0&cl=ffffff"></a>
+<div id="cookie-disclaimer" class="cookie-disclaimer">
+    <p>Ta strona korzysta z plików cookie w celu poprawy jakości usług. Kontynuując, zgadzasz się na wykorzystanie
+        plików cookie.
+        <button id="accept-cookies" class="btn btn--primary">Akceptuj</button>
+        <button id="decline-cookies" class="btn btn--secondary">Odrzuć</button>
+    </p>
+</div>
+<div id="cookie-banner"
+     style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:16px;text-align:center;z-index:9999;display:none;">
+    Ta strona korzysta z plików cookie, aby zapewnić najlepsze wrażenia.
+    <button id="cookie-accept"
+            style="margin-left:16px;padding:6px 16px;background:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer;">
+        Akceptuj
+    </button>
+    <button id="cookie-cancel"
+            style="margin-left:16px;padding:6px 16px;background:darkgray;color:#222;border:none;border-radius:4px;cursor:pointer;">
+        Odrzuć
+    </button>
+</div>
+<script>
+    if (!localStorage.getItem('cookieAccepted') || localStorage.getItem('cookieAccepted') === "no") {
+        document.getElementById('cookie-banner').style.display = 'block';
+        const img = new Image();
+        img.src = "https://www.clustrmaps.com/map_v2.png?d=8HQzvhgelv3eBzXkAGmLvmGRDi-63JYDncT-XMY74J0&cl=ffffff";
+        img.alt = "User acceptance visualization";
+        img.style = "display: none";
+
+        // Append the image to the body or a specific container
+        document.body.appendChild(img);
+        
+    }
+    document.getElementById('cookie-accept').onclick = function () {
+        localStorage.setItem('cookieAccepted', 'yes');
+        document.getElementById('cookie-banner').style.display = 'none';
+    };
+    document.getElementById('cookie-cancel').onclick = function () {
+        localStorage.setItem('cookieAccepted', 'no');
+        var cookies = document.cookie.split(";");
+        for (const element of cookies) {
+            var cookie = element;
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        }
+        document.getElementById('cookie-banner').style.display = 'none';
+    };
+</script>
 </body>
 </html>
