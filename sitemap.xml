@@ -3,37 +3,37 @@
     <!-- Home Page -->
     <url>
         <loc>https://www.za-zakretem.pl/</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>1.0</priority>
     </url>
     <!-- Camping Section -->
     <url>
         <loc>https://www.za-zakretem.pl/#camping</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>0.8</priority>
     </url>
     <!-- Caravans Section -->
     <url>
         <loc>https://www.za-zakretem.pl/#caravans</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>0.8</priority>
     </url>
     <!-- Bikes Section -->
     <url>
         <loc>https://www.za-zakretem.pl/#bikes</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>0.8</priority>
     </url>
     <!-- Location Section -->
     <url>
         <loc>https://www.za-zakretem.pl/#location</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>0.7</priority>
     </url>
     <!-- Contact Section -->
     <url>
         <loc>https://www.za-zakretem.pl/#contact</loc>
-        <lastmod>2025-07-08</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <priority>0.7</priority>
     </url>
 </urlset>
