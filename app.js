@@ -145,9 +145,9 @@ function initMap() {
     // Add popup
     marker.bindPopup(`
         <div style="text-align: center; padding: 10px;">
-            <strong>Pole namiotowe Za zakrętem</strong><br>
+            <strong>Za zakrętem - camping w Dolinie Baryczy</strong><br>
             Pracze 20, 56-300 Milicz<br>
-            <a href="https://maps.google.com/?q=${lat},${lng}" target="_blank" style="color: #2d5940; text-decoration: none;">
+            <a href="https://maps.app.goo.gl/H6UXtxmtMz1GnWA46" target="_blank" style="color: #2d5940; text-decoration: none;">
                 🗺️ Zobacz w Google Maps
             </a>
         </div>
