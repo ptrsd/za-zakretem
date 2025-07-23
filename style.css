@@ -120,7 +120,7 @@
     --color-warning: rgba(230, 129, 97, 1);
     --color-info: rgba(167, 169, 169, 1);
     --color-focus-ring: rgba(50, 184, 198, 0.4);
-    --color-btn-primary-text: rgba(19, 52, 59, 1);
+    --color-btn-primary-text: rgba(252, 252, 249, 1);
     --color-card-border: rgba(119, 124, 124, 0.2);
     --color-card-border-inner: rgba(119, 124, 124, 0.15);
     --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
@@ -163,7 +163,7 @@
   --color-warning: rgba(230, 129, 97, 1);
   --color-info: rgba(167, 169, 169, 1);
   --color-focus-ring: rgba(50, 184, 198, 0.4);
-  --color-btn-primary-text: rgba(19, 52, 59, 1);
+  --color-btn-primary-text: rgba(252, 252, 249, 1);
   --color-card-border: rgba(119, 124, 124, 0.15);
   --color-card-border-inner: rgba(119, 124, 124, 0.15);
   --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
