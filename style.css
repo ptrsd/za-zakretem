@@ -657,7 +657,7 @@ select.form-control {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('landing.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1009,14 +1009,18 @@ select.form-control {
 
 .lightbox-content {
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 90vw;      /* 90% szerokości okna */
+  max-height: 90vh;     /* 90% wysokości okna */
+  overflow: hidden;     /* ukrywa przepełnienie */
+  display: flex;        /* centrumje zawartość */
+  justify-content: center;
+  align-items: center;
 }
 
 .lightbox-close {
   position: absolute;
-  top: -40px;
-  right: 0;
+  top: 10px;
+  right: 10px;
   color: white;
   font-size: 30px;
   cursor: pointer;
@@ -1028,6 +1032,7 @@ select.form-control {
   justify-content: center;
   border-radius: 50%;
   transition: background-color var(--duration-fast) var(--ease-standard);
+  z-index: 10;
 }
 
 .lightbox-close:hover {
