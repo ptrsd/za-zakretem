@@ -742,12 +742,16 @@ select.form-control {
   }
 }
 
+.content-text--wide {
+  grid-column: span 2;
+}
+
 /* Content Grid */
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-32);
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (max-width: 768px) {
@@ -794,6 +798,30 @@ select.form-control {
   }
 }
 
+.glist {
+  list-style: none;
+  padding: 0;
+}
+
+.glist li {
+  padding: var(--space-4) 0;
+  position: relative;
+  padding-left: var(--space-20);
+}
+
+.glist li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #555;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+  .glist li::before {
+    color: #aaa;
+  }
+}
 .amenities-list {
   list-style: none;
   padding: 0;

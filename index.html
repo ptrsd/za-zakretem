@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
+    <title>Za zakrętem - Pracze 20 - camping w Dolinie Baryczy</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style-min.css">
+    <link rel="canonical" href="https://www.za-zakretem.pl/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -16,10 +18,6 @@
     <meta name="keywords"
           content="pole namiotowe, Stawy Milickie, wypożyczalnia rowerów, przyczepy kempingowe, turystyka wiejska, Dolny Śląsk wypoczynek, Dolina Baryczy">
     <meta name="author" content="Pole namiotowe Za zakrętem">
-    <title>Za zakrętem - Pracze 20 - camping w Dolinie Baryczy</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" defer/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://www.za-zakretem.pl/">
     <meta property="og:title" content="Pole namiotowe Za zakrętem - Dolny Śląsk wypoczynek">
     <meta property="og:description"
           content="Przyczepy kempingowe, pole namiotowe, wypożyczalnia rowerów. Bike-friendly i budżetowo w Dolinie Baryczy!">
@@ -46,6 +44,7 @@
 <nav class="navbar">
     <div class="container">
         <ul class="nav-links">
+            <li><a href="#about">O nas</a></li>
             <li><a href="#camping">Pole namiotowe</a></li>
             <li><a href="#caravans">Przyczepy</a></li>
             <li><a href="#bikes">Rowery</a></li>
@@ -57,7 +56,45 @@
 
 <!-- Main Content -->
 <main>
-    <!-- Camping Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>O nas</h2>
+            <div class="content-grid">
+                <div class="content-text content-text--wide">
+                    <p style="font-size: larger;">Zatrzymaj się „Za zakrętem”, czyli kempingu w Dolinie Baryczy, stworzonego z myślą o rowerzystach!</p>
+                    <p style="font-size: larger;">Prowadzimy kameralne pole namiotowe położone przy trasach Dolnośląskiej Krainy Rowerowej i szlaku EuroVelo 9. Oferujemy spokojny nocleg blisko Stawów Milickich, lasów i terenów Natura 2000. To miejsce stworzone przez miłośników turystyki i sportów rowerowych oraz sprawdzone przez turystów z sakwami, gravelowców i MTB.</p>
+                </div>
+                <div class="content-text">
+                    <h4>Oferujemy:</h4>
+                    <ul class="glist">
+                        <li>Noclegi w przyczepach kempingowych</li>
+                        <li>Pole namiotowe</li>
+                        <li>Pole dla samochodów kempingowych</li>
+                        <li>Wypożyczalnia rowerów i kasków</li>
+                        <li>Serwis kamperów</li>
+                        <li>Naprawa rowerów</li>
+                        <li>Zakup części rowerowych na miejscu</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h4>Udogodnienia:</h4>
+                    <ul class="glist">
+                        <li>Prysznic i toaleta</li>
+                        <li>Dostęp do prądu</li>
+                        <li>Dostęp do podstawowych narzędzi do naprawy roweru</li>
+                        <li>Zamykany parking dla rowerów</li>
+                        <li>Ogrodzona posesja</li>
+                        <li>Parking na terenie posesji</li>
+                        <li>W pobliżu znajduje się sklep, bar, oraz food truck (lody, gofry, kawa)</li>
+                        <li>Lokalizacja tuż przy trasach Dolnośląskiej Krainy Rowerowej i szlaku EuroVelo 9</li>
+                        <li>Bliskość stawów, lasów i terenów "Natura 2000"</li>
+                        <li><b>Wir sprechen Deutsch! / Mówimy po niemiecku!</b></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section id="camping" class="section">
         <div class="container">
             <h2>Pole namiotowe</h2>
