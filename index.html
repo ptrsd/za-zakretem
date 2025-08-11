@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <link rel="stylesheet" href="style-min.css">
+    <link rel="stylesheet" href="https://za-zakretem.pl/style-min.css">
     <link rel="canonical" href="https://www.za-zakretem.pl/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,125 @@
     <meta property="og:image:height" content="300"/>
     <meta property="og:url" content="https://www.za-zakretem.pl/">
     <meta property="og:type" content="website">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Campground",
+            "name": "Za zakrętem - Pracze 20 - camping w Dolinie Baryczy",
+            "description": "Przyczepy kempingowe, pole namiotowe, wypożyczalnia rowerów. Bike-friendly i budżetowo w Dolinie Baryczy!",
+            "url": "https://za-zakretem.pl",
+            "image": "https://za-zakretem.pl/IMG_0491.webp",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pracze 20",
+                "addressLocality": "Milicz",
+                "postalCode": "56-300",
+                "addressRegion": "Dolnośląskie",
+                "addressCountry": "PL",
+                "telephone": "+48 531 441 328"
+            },
+            "amenityFeature": [
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Prysznic"
+                },
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Toaleta"
+                },
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Prąd"
+                },
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Miejsce na ognisko"
+                },
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dostęp do narzędzi rowerowych"
+                },
+                {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Wypożyczalnia rowerów"
+                }
+            ],
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Pole namiotowe",
+                    "description": "15 miejsc na namioty",
+                    "price": "30",
+                    "priceCurrency": "PLN",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "30",
+                        "priceCurrency": "PLN",
+                        "unitCode": "DAY",
+                        "unitText": "Za dobę za osobę"
+                    },
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Przyczepy kempingowe",
+                    "description": "Przyczepa dwuosobowa z pełnym wyposażeniem",
+                    "price": "60",
+                    "priceCurrency": "PLN",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "60",
+                        "priceCurrency": "PLN",
+                        "unitCode": "DAY",
+                        "unitText": "Za dobę za osobę"
+                    },
+                    "eligibleQuantity": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 1,
+                        "maxValue": 2,
+                        "unitText": "osoba"
+                    },
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Przyczepy kempingowe",
+                    "description": "Przyczepa czteroosobowa z pełnym wyposażeniem",
+                    "price": "60",
+                    "priceCurrency": "PLN",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "60",
+                        "priceCurrency": "PLN",
+                        "unitCode": "DAY",
+                        "unitText": "Za dobę za osobę"
+                    },
+                    "eligibleQuantity": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 1,
+                        "maxValue": 4,
+                        "unitText": "osoba"
+                    },
+                    "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Wypożyczalnia rowerów",
+                    "description": "Rowery MTB, miejskie i dziecięce z kaskami",
+                    "price": "50",
+                    "priceCurrency": "PLN",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "50",
+                        "priceCurrency": "PLN",
+                        "unitCode": "DAY"
+                    },
+                    "availability": "https://schema.org/InStock"
+                }
+            ],
+            "priceRange": "30-60 PLN"
+        }
+    </script>
 </head>
 <body>
 <!-- Header -->
@@ -116,13 +235,13 @@
                     <div class="carousel" id="campingCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="background.webp" loading="lazy" alt="Pole namiotowe w środku wsi" class="carousel-image">
+                                <img src="https://za-zakretem.pl/background.webp" loading="lazy" alt="Pole namiotowe w środku wsi" class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0488.webp" loading="lazy" alt="Udogodnienia pola namiotowego" class="carousel-image">
+                                <img src="https://za-zakretem.pl/IMG_0488.webp" loading="lazy" alt="Udogodnienia pola namiotowego" class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0487.webp" loading="lazy" alt="Jadalnia na polu namiotowym" class="carousel-image">
+                                <img src="https://za-zakretem.pl/IMG_0487.webp" loading="lazy" alt="Jadalnia na polu namiotowym" class="carousel-image">
                             </div>
                         </div>
                         <button class="carousel-btn carousel-btn--prev" data-carousel="campingCarousel">‹</button>
@@ -154,20 +273,20 @@
                     <div class="carousel" id="caravansCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="IMG_9379.webp" loading="lazy" alt="Przyczepy kempingowe na wynajem" class="carousel-image">
+                                <img src="https://za-zakretem.pl/IMG_9379.webp" loading="lazy" alt="Przyczepy kempingowe na wynajem" class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_9382.webp" loading="lazy" alt="Wnętrze komfortowej przyczepy" class="carousel-image">
+                                <img src="https://za-zakretem.pl/IMG_9382.webp" loading="lazy" alt="Wnętrze komfortowej przyczepy" class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_9381.webp" loading="lazy" alt="Wyposażenie przyczepy kempingowej" class="carousel-image">
+                                <img src="https://za-zakretem.pl/IMG_9381.webp" loading="lazy" alt="Wyposażenie przyczepy kempingowej" class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_9385.webp" loading="lazy" alt="Przyczepa dwuosobowa w okolicach Milicza"
+                                <img src="https://za-zakretem.pl/IMG_9385.webp" loading="lazy" alt="Przyczepa dwuosobowa w okolicach Milicza"
                                      class="carousel-image">
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_9387.webp" loading="lazy" alt="Przyczepa kempingowa z udogodnieniami"
+                                <img src="https://za-zakretem.pl/IMG_9387.webp" loading="lazy" alt="Przyczepa kempingowa z udogodnieniami"
                                      class="carousel-image">
                             </div>
                         </div>
@@ -199,7 +318,7 @@
                     <div class="carousel" id="bikesCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="jrwyvzoyelettjqwa1ob.webp" loading="lazy"
+                                <img src="https://za-zakretem.pl/jrwyvzoyelettjqwa1ob.webp" loading="lazy"
                                      alt="Rowery MTB, miejskie i dziecięce do wynajęcia" class="carousel-image">
                             </div>
                         </div>
@@ -283,6 +402,7 @@
         Odrzuć
     </button>
 </div>
+
 <script>
     if (!localStorage.getItem('cookieAccepted') || localStorage.getItem('cookieAccepted') === "no") {
         document.getElementById('cookie-banner').style.display = 'block';
