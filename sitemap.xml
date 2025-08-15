@@ -4,9 +4,19 @@
         <loc>https://www.za-zakretem.pl/</loc>
         <lastmod>2025-08-15</lastmod>
         <priority>1.0</priority>
-    </url>    
+    </url>
     <url>
         <loc>https://www.za-zakretem.pl/de</loc>
+        <lastmod>2025-08-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.za-zakretem.pl/cs</loc>
+        <lastmod>2025-08-15</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.za-zakretem.pl/en</loc>
         <lastmod>2025-08-15</lastmod>
         <priority>1.0</priority>
     </url>
