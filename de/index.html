@@ -2,14 +2,42 @@
 <html lang="de">
 <head>
     <title>Za zakrętem - Pracze 20 - Camping im Barycz-Tal</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://za-zakretem.pl/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://za-zakretem.pl/favicon-32x32.png">
+    <link rel="shortcut icon" href="https://za-zakretem.pl/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://za-zakretem.pl/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://za-zakretem.pl/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="https://za-zakretem.pl/apple-touch-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://za-zakretem.pl/style-min.css">
+    <style>
+        .language-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            background: rgba(33, 86, 63, 0.5);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .language-item {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .language-item:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .language-item img {
+            border: 1px solid #ddd;
+        }
+    </style>
     <link rel="canonical" href="https://www.za-zakretem.pl/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +59,21 @@
 <body>
 <!-- Header -->
 <header class="hero">
+    <div class="language-menu">
+        <a href="https://za-zakretem.pl/" class="language-item" title="Polski">
+            <img src="https://flagcdn.com/w40/pl.png" width="24" height="14" alt="Polski">
+        </a>
+        <a href="https://za-zakretem.pl/en" class="language-item" title="English">
+            <img src="https://flagcdn.com/w40/gb.png" width="24" height="14" alt="English">
+        </a>
+        <a href="https://za-zakretem.pl/cs" class="language-item" title="Čeština">
+            <img src="https://flagcdn.com/w40/cz.png" width="24" height="14" alt="Čeština">
+        </a>
+        <a href="https://za-zakretem.pl/de" class="language-item" title="Deutsch">
+            <img src="https://flagcdn.com/w40/de.png" width="24" height="14" alt="Deutsch">
+        </a>
+    </div>
+
     <div class="hero-content">
         <h1>Za zakrętem - Pracze 20 - Camping im Barycz-Tal</h1>
         <p class="hero-subtitle">Wohnwagen, Campingplatz, Fahrradverleih.
