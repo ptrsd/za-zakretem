@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Za zakrętem - Pracze 20 - kemp v údolí Baryczy</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://za-zakretem.pl/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://za-zakretem.pl/favicon-32x32.png">
+    <link rel="shortcut icon" href="https://za-zakretem.pl/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://za-zakretem.pl/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://za-zakretem.pl/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="https://za-zakretem.pl/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://za-zakretem.pl/style-min.css">
+    <link rel="alternate" hreflang="pl" href="https://za-zakretem.pl" />
+    <link rel="alternate" hreflang="en" href="https://za-zakretem.pl/en/" />
+    <link rel="alternate" hreflang="de" href="https://za-zakretem.pl/de/" />
+    <link rel="alternate" hreflang="cz" href="https://za-zakretem.pl/cz/" />
+    <link rel="alternate" hreflang="x-default" href="https://za-zakretem.pl/" />
+    <style>
+        .language-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            background: rgba(33, 86, 63, 0.5);
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .language-item {
+            display: flex;
+            align-items: center;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .language-item:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .language-item img {
+            border: 1px solid #ddd;
+        }
+    </style>
+    <link rel="canonical" href="https://www.za-zakretem.pl/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Kemp Za zakrętem je klidné místo v srdci vesnice, nabízející vybavení pro stany, karavany a kola. Ideální základna pro průzkum Milických rybníků.">
+    <meta name="keywords"
+          content="kemp, Milické rybníky, půjčovna kol, karavany, venkovská turistika, Dolní Slezsko rekreace, údolí Baryczy, kempování, servis obytných vozů">
+    <meta name="author" content="Kemp Za zakrętem">
+    <meta property="og:title" content="Kemp Za zakrętem - Dolní Slezsko rekreace">
+    <meta property="og:description"
+          content="Karavany, kemp, půjčovna kol. Příjemný pro cyklisty a cenově dostupný v údolí Baryczy!">
+    <meta property="og:image" content="https://za-zakretem.pl/og-za-zakretem.png">
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta property="og:url" content="https://www.za-zakretem.pl/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+<!-- Header -->
+<header class="hero">
+    <div class="language-menu">
+        <a href="https://za-zakretem.pl/" class="language-item" title="Polski">
+            <img src="https://flagcdn.com/w40/pl.png" width="24" height="14" alt="Polski">
+        </a>
+        <a href="https://za-zakretem.pl/en" class="language-item" title="English">
+            <img src="https://flagcdn.com/w40/gb.png" width="24" height="14" alt="English">
+        </a>
+        <a href="https://za-zakretem.pl/cz" class="language-item" title="Čeština">
+            <img src="https://flagcdn.com/w40/cz.png" width="24" height="14" alt="Čeština">
+        </a>
+        <a href="https://za-zakretem.pl/de" class="language-item" title="Deutsch">
+            <img src="https://flagcdn.com/w40/de.png" width="24" height="14" alt="Deutsch">
+        </a>
+    </div>
+
+    <div class="hero-content">
+        <h1>Za zakrętem - Pracze 20 - kemp v údolí Baryczy</h1>
+        <p class="hero-subtitle">Karavany, kemp, půjčovna kol.
+            <br>Příjemný pro cyklisty a cenově dostupný v údolí Baryczy!
+        </p>
+        <a href="#camping" class="btn btn--primary btn--lg">Poznejte naši nabídku!</a>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#camping">Kemp</a></li>
+            <li><a href="#caravans">Karavany</a></li>
+            <li><a href="#bikes">Kola</a></li>
+            <li><a href="#location">Poloha</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>O nás</h2>
+            <div class="content-grid">
+                <div class="content-text content-text--wide">
+                    <p style="font-size: larger;">Zastavte se „Za zakrętem", kempu v údolí Baryczy vytvořeném s ohledem na cyklisty!</p>
+                    <p style="font-size: larger;">Provozujeme komorní kemp nacházející se na trasách Dolnoslezské cyklistické krajiny a stezky EuroVelo 9. Nabízíme klidné ubytování v blízkosti Milických rybníků, lesů a oblastí Natura 2000. Toto místo vytvořili milovníci turistiky a cyklosportů a vyzkoušeli turisté s brašnami, gravel a MTB jezdci.</p>
+                </div>
+                <div class="content-text">
+                    <h4>Nabízíme:</h4>
+                    <ul class="glist">
+                        <li>Ubytování v kempových karavanech</li>
+                        <li>Kemp</li>
+                        <li>Místo pro obytné vozy</li>
+                        <li>Půjčovna kol a helem</li>
+                        <li>Servis obytných vozů</li>
+                        <li>Opravy kol</li>
+                        <li>Nákup cyklistických dílů na místě</li>
+                    </ul>
+                </div>
+                <div class="content-text">
+                    <h4>Vybavení:</h4>
+                    <ul class="glist">
+                        <li>Sprcha a toaleta</li>
+                        <li>Přístup k elektřině</li>
+                        <li>Přístup k základním nástrojům pro opravu kola</li>
+                        <li>Uzamykatelné parkování pro kola</li>
+                        <li>Oplocený pozemek</li>
+                        <li>Parkování na pozemku</li>
+                        <li>V blízkosti se nachází obchod, bar a food truck (zmrzlina, vafle, káva)</li>
+                        <li>Poloha přímo na trasách Dolnoslezské cyklistické krajiny a stezky EuroVelo 9</li>
+                        <li>Blízkost rybníků, lesů a oblastí "Natura 2000"</li>
+                    </ul>
+                </div>
+                <div class="content-text content-text--wide" style="text-align: center;">
+                    <b>Mluvíme německy a anglicky!</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="camping" class="section">
+        <div class="container">
+            <h2>Kemp</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>15 míst pro stany</h3>
+                    <p class="price">30 zł za den na osobu</p>
+                    <h4>Vybavení:</h4>
+                    <ul class="amenities-list">
+                        <li>Sprcha</li>
+                        <li>Toaleta</li>
+                        <li>Elektřina</li>
+                        <li>Místo na oheň</li>
+                        <li>Přístup k základním nástrojům potřebným pro opravu kola</li>
+                    </ul>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="campingCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/background.webp" loading="lazy" alt="Kemp uprostřed vesnice" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_0488.webp" loading="lazy" alt="Vybavení kempu" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_0487.webp" loading="lazy" alt="Jídelní koutek v kempu" class="carousel-image">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev" data-carousel="campingCarousel">‹</button>
+                        <button class="carousel-btn carousel-btn--next" data-carousel="campingCarousel">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caravans Section -->
+    <section id="caravans" class="section section--alt">
+        <div class="container">
+            <h2>Kempové karavany</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>2místné a 4místné karavany</h3>
+                    <p class="price">60 zł za den na osobu</p>
+                    <h4>Vybavení:</h4>
+                    <ul class="amenities-list">
+                        <li>Sprcha</li>
+                        <li>Toaleta</li>
+                        <li>Kuchyně</li>
+                        <li>Elektřina</li>
+                        <li>2 nebo 4 lůžka, podle karavanu</li>
+                    </ul>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="caravansCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_9379.webp" loading="lazy" alt="Kempové karavany k pronájmu" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_9382.webp" loading="lazy" alt="Interiér komfortního karavanu" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_9381.webp" loading="lazy" alt="Vybavení kempového karavanu" class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_9385.webp" loading="lazy" alt="Dvoumístný karavan v oblasti Milicza"
+                                     class="carousel-image">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/IMG_9387.webp" loading="lazy" alt="Kempový karavan s vybavením"
+                                     class="carousel-image">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev" data-carousel="caravansCarousel">‹</button>
+                        <button class="carousel-btn carousel-btn--next" data-carousel="caravansCarousel">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section id="bikes" class="section">
+        <div class="container">
+            <h2>Půjčovna kol</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>3 typy kol</h3>
+                    <p class="price">50 zł za den</p>
+                    <h4>K dispozici:</h4>
+                    <ul class="amenities-list">
+                        <li>Horské kolo</li>
+                        <li>Městské kolo</li>
+                        <li>Dětské kolo</li>
+                        <li>Helmy v různých velikostech</li>
+                    </ul>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="bikesCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/jrwyvzoyelettjqwa1ob.webp" loading="lazy"
+                                     alt="MTB, městská a dětská kola k pronájmu" class="carousel-image">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev" data-carousel="bikesCarousel">‹</button>
+                        <button class="carousel-btn carousel-btn--next" data-carousel="bikesCarousel">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section section--alt">
+        <div class="container">
+            <h2>Poloha</h2>
+            <div class="location-content">
+                <div id="map" class="map-container"
+                     aria-label="Mapa polohy Za zakrętem - kemp v údolí Baryczy"></div>
+                <div class="location-info">
+                    <h3>Adresa</h3>
+                    <p>Pracze 20<br>56-300 Milicz<br>Dolnoslezské vojvodství</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Kontaktní informace</h3>
+                    <div class="contact-item">
+                        <strong>Adresa:</strong>
+                        <p>Pracze 20, 56-300 Milicz, Dolnoslezské vojvodství</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telefon:</strong>
+                        <p><a href="tel:+48531441328" aria-label="Zavolejte na číslo +48 531 441 328">+48 531 441
+                            328</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <p><a href="mailto:januszstasiewicz@hotmail.com"
+                              aria-label="Pošlete email na adresu januszstasiewicz@hotmail.com">januszstasiewicz@hotmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Google Maps:</strong>
+                        <p><a href="https://maps.app.goo.gl/H6UXtxmtMz1GnWA46" target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label="Zobrazte polohu kempu Za zakrętem na Google Maps">Zobrazit na Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+        <span class="lightbox-close" aria-label="Zavřít náhled obrázku">&times;</span>
+        <img id="lightbox-image" src="" alt="Zobrazený obrázek">
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="app.js"></script>
+<div id="cookie-banner"
+     style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:16px;text-align:center;z-index:9999;display:none;">
+    Tato webová stránka používá cookies k zajištění nejlepšího uživatelského zážitku.
+    <button id="cookie-accept"
+            style="margin-left:16px;padding:6px 16px;background:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer;">
+        Přijmout
+    </button>
+    <button id="cookie-cancel"
+            style="margin-left:16px;padding:6px 16px;background:darkgray;color:#222;border:none;border-radius:4px;cursor:pointer;">
+        Odmítnout
+    </button>
+</div>
+
+<script>
+    if (!localStorage.getItem('cookieAccepted') || localStorage.getItem('cookieAccepted') === "no") {
+        document.getElementById('cookie-banner').style.display = 'block';
+        const img = new Image();
+        img.src = "https://www.clustrmaps.com/map_v2.png?d=zTSIX_4sfuATLpOY7hbj8tBeMnIHrcF7uxWx1-zhNDQ&cl=ffffff";
+        img.style = "display: none; margin: 20px auto; max-width: 100%;";
+
+        // Append the image to the body or a specific container
+        document.body.appendChild(img);
+
+    }
+    document.getElementById('cookie-accept').onclick = function () {
+        localStorage.setItem('cookieAccepted', 'yes');
+        document.getElementById('cookie-banner').style.display = 'none';
+    };
+    document.getElementById('cookie-cancel').onclick = function () {
+        localStorage.setItem('cookieAccepted', 'no');
+        var cookies = document.cookie.split(";");
+        for (const element of cookies) {
+            var cookie = element;
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+        }
+        document.getElementById('cookie-banner').style.display = 'none';
+    };
+</script>
+</body>
+</html>
