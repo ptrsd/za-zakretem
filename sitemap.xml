@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://www.za-zakretem.pl/</loc>
-        <lastmod>2025-08-15</lastmod>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://www.za-zakretem.pl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.za-zakretem.pl/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.za-zakretem.pl/de/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.za-zakretem.pl/cs/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.za-zakretem.pl/"/>
+        <lastmod>2025-09-05</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.za-zakretem.pl/de</loc>
-        <lastmod>2025-08-15</lastmod>
+        <loc>https://www.za-zakretem.pl/de/</loc>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://www.za-zakretem.pl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.za-zakretem.pl/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.za-zakretem.pl/de/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.za-zakretem.pl/cs/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.za-zakretem.pl/"/>
+        <lastmod>2025-09-05</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.za-zakretem.pl/cs</loc>
-        <lastmod>2025-08-15</lastmod>
+        <loc>https://www.za-zakretem.pl/cs/</loc>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://www.za-zakretem.pl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.za-zakretem.pl/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.za-zakretem.pl/de/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.za-zakretem.pl/cs/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.za-zakretem.pl/"/>
+        <lastmod>2025-09-05</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.za-zakretem.pl/en</loc>
-        <lastmod>2025-08-15</lastmod>
+        <loc>https://www.za-zakretem.pl/en/</loc>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://www.za-zakretem.pl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.za-zakretem.pl/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.za-zakretem.pl/de/"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.za-zakretem.pl/cs/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.za-zakretem.pl/"/>
+        <lastmod>2025-09-05</lastmod>
+        <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 </urlset>
