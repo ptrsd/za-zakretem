@@ -43,7 +43,7 @@
             border: 1px solid #ddd;
         }
     </style>
-    <link rel="canonical" href="https://www.za-zakretem.pl/cz/">
+    <link rel="canonical" href="https://www.za-zakretem.pl/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -249,7 +249,7 @@
                     <div class="carousel" id="bikesCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="https://za-zakretem.pl/jrwyvzoyelettjqwa1ob.webp" loading="lazy"
+                                <img src="https://za-zakretem.pl/2.webp" loading="lazy"
                                      alt="MTB, městská a dětská kola k pronájmu" class="carousel-image">
                             </div>
                         </div>
@@ -260,7 +260,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- EBikes Section -->
     <section id="ebikes" class="section section--alt">
         <div class="container">
@@ -275,7 +275,7 @@
                     <div class="carousel" id="ebikesCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="https://za-zakretem.pl/jrwyvzoyelettjqwa1ob.webp" loading="lazy"
+                                <img src="https://za-zakretem.pl/1.webp" loading="lazy"
                                      alt="Nabíjení elektrokol" class="carousel-image">
                             </div>
                         </div>
@@ -335,56 +335,3 @@
         </div>
     </section>
 </main>
-
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox">
-    <div class="lightbox-content">
-        <span class="lightbox-close" aria-label="Zavřít náhled obrázku">&times;</span>
-        <img id="lightbox-image" src="" alt="Zobrazený obrázek">
-    </div>
-</div>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-<script src="app.js"></script>
-<div id="cookie-banner"
-     style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:16px;text-align:center;z-index:9999;display:none;">
-    Tato webová stránka používá cookies k zajištění nejlepšího uživatelského zážitku.
-    <button id="cookie-accept"
-            style="margin-left:16px;padding:6px 16px;background:#4caf50;color:#fff;border:none;border-radius:4px;cursor:pointer;">
-        Přijmout
-    </button>
-    <button id="cookie-cancel"
-            style="margin-left:16px;padding:6px 16px;background:darkgray;color:#222;border:none;border-radius:4px;cursor:pointer;">
-        Odmítnout
-    </button>
-</div>
-
-<script>
-    if (!localStorage.getItem('cookieAccepted') || localStorage.getItem('cookieAccepted') === "no") {
-        document.getElementById('cookie-banner').style.display = 'block';
-        const img = new Image();
-        img.src = "https://www.clustrmaps.com/map_v2.png?d=zTSIX_4sfuATLpOY7hbj8tBeMnIHrcF7uxWx1-zhNDQ&cl=ffffff";
-        img.style = "display: none; margin: 20px auto; max-width: 100%;";
-
-        // Append the image to the body or a specific container
-        document.body.appendChild(img);
-
-    }
-    document.getElementById('cookie-accept').onclick = function () {
-        localStorage.setItem('cookieAccepted', 'yes');
-        document.getElementById('cookie-banner').style.display = 'none';
-    };
-    document.getElementById('cookie-cancel').onclick = function () {
-        localStorage.setItem('cookieAccepted', 'no');
-        var cookies = document.cookie.split(";");
-        for (const element of cookies) {
-            var cookie = element;
-            var eqPos = cookie.indexOf("=");
-            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
-        }
-        document.getElementById('cookie-banner').style.display = 'none';
-    };
-</script>
-</body>
-</html>

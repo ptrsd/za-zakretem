@@ -107,11 +107,11 @@
                     "@type": "Offer",
                     "name": "Pole namiotowe",
                     "description": "15 miejsc na namioty",
-                    "price": "30",
+                    "price": "40",
                     "priceCurrency": "PLN",
                     "priceSpecification": {
                         "@type": "UnitPriceSpecification",
-                        "price": "30",
+                        "price": "40",
                         "priceCurrency": "PLN",
                         "unitCode": "DAY",
                         "unitText": "Za dobę za osobę"
@@ -173,6 +173,20 @@
                         "unitCode": "DAY"
                     },
                     "availability": "https://schema.org/InStock"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Ładowanie rowerów elektrycznych",
+                    "description": "Ładowanie baterii roweru elektrycznego",
+                    "price": "10",
+                    "priceCurrency": "PLN",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "10",
+                        "priceCurrency": "PLN",
+                        "unitText": "za rower za ładowanie"
+                    },
+                    "availability": "https://schema.org/InStock"
                 }
             ],
             "priceRange": "30-60 PLN"
@@ -214,6 +228,7 @@
             <li><a href="#camping">Pole namiotowe</a></li>
             <li><a href="#caravans">Przyczepy</a></li>
             <li><a href="#bikes">Rowery</a></li>
+            <li><a href="#ebikes">E-bike</a></li>
             <li><a href="#location">Lokalizacja</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
@@ -237,6 +252,7 @@
                         <li>Pole namiotowe</li>
                         <li>Pole dla samochodów kempingowych</li>
                         <li>Wypożyczalnia rowerów i kasków</li>
+                        <li>Ładowanie rowerów elektrycznych</li>
                         <li>Serwis kamperów</li>
                         <li>Naprawa rowerów</li>
                         <li>Zakup części rowerowych na miejscu</li>
@@ -268,7 +284,7 @@
             <div class="content-grid">
                 <div class="content-text">
                     <h3>15 miejsc na namioty</h3>
-                    <p class="price">30 zł za dobę od osoby</p>
+                    <p class="price">40 zł za dobę od osoby</p>
                     <h4>Udogodnienia:</h4>
                     <ul class="amenities-list">
                         <li>Prysznic</li>
@@ -365,12 +381,38 @@
                     <div class="carousel" id="bikesCarousel">
                         <div class="carousel-track">
                             <div class="carousel-slide">
-                                <img src="https://za-zakretem.pl/jrwyvzoyelettjqwa1ob.webp" loading="lazy"
+                                <img src="https://za-zakretem.pl/2.webp" loading="lazy"
                                      alt="Rowery MTB, miejskie i dziecięce do wynajęcia" class="carousel-image">
                             </div>
                         </div>
                         <button class="carousel-btn carousel-btn--prev" data-carousel="bikesCarousel">‹</button>
                         <button class="carousel-btn carousel-btn--next" data-carousel="bikesCarousel">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EBikes Section -->
+    <section id="ebikes" class="section section--alt">
+        <div class="container">
+            <h2>Rowery elektryczne</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <h3>Ładowanie rowerów elektrycznych</h3>
+                    <p class="price">10 zł za rower za ładowanie</p>
+                    <p>Zapraszamy do naładowania swojego roweru elektrycznego w naszym punkcie. Zapewniamy bezpieczne miejsce i dostęp do prądu.</p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel" id="ebikesCarousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://za-zakretem.pl/1.webp" loading="lazy"
+                                     alt="Ładowanie rowerów elektrycznych" class="carousel-image">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn--prev" data-carousel="ebikesCarousel">‹</button>
+                        <button class="carousel-btn carousel-btn--next" data-carousel="ebikesCarousel">›</button>
                     </div>
                 </div>
             </div>
